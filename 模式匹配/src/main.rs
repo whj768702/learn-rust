@@ -1,3 +1,4 @@
+#[warn(dead_code)]
 enum Direction {
     East,
     West,
