@@ -2,6 +2,9 @@
 name = "grrs_command"
 version = "0.1.0"
 edition = "2021"
+license = "MIT OR Apache-2.0"
+description = "A simple grep command written in Rust"
+
 [lib]
 name = "grrs_command"
 
@@ -9,5 +12,4 @@ name = "grrs_command"
 
 [dependencies]
 clap = { version = "4.0", features = ["derive"] }
-anyhow = {version="1.0", default-features=false}
-log = {version="0.4", features=["std"]}
+anyhow_ext = {version = "0.2"}
