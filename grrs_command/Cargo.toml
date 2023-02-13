@@ -13,3 +13,4 @@ name = "grrs_command"
 [dependencies]
 clap = { version = "4.0", features = ["derive"] }
 anyhow_ext = {version = "0.2"}
+ctrlc = {version = "3.2"}

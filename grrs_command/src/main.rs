@@ -4,6 +4,9 @@ use std::fmt::Error;
 use anyhow_ext::{Context, Result};
 use clap::Parser;
 
+use ctrlc;
+use std::{thread, time::Duration};
+
 mod test;
 
 #[derive(Parser)]
@@ -15,6 +18,11 @@ struct Cli {
 }
 
 fn main() -> Result<()> {
+    ctrlc::set_handler(move || {
+        println!("received Ctrl+C!");
+    })
+    .expect("Error setting Ctrl-C handler");
+
     let args = Cli::parse();
 
     // 获取文件内容
