@@ -1,6 +1,7 @@
 mod chapter_one;
 
 use chapter_one::enums::enum_print;
+use chapter_one::struct_methods::print_struct_methods;
 
 fn silly_by(a: i32, b: i32) -> i32 {
     let mut result = 0;
@@ -68,4 +69,6 @@ fn main() {
     };
     bump__player_score(player, 120);
     enum_print();
+
+    print_struct_methods();
 }
