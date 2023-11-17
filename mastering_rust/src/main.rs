@@ -1,6 +1,7 @@
 mod chapter_one;
 
 use chapter_one::enums::enum_print;
+use chapter_one::set_types;
 use chapter_one::struct_methods::print_struct_methods;
 
 fn silly_by(a: i32, b: i32) -> i32 {
@@ -71,4 +72,10 @@ fn main() {
     enum_print();
 
     print_struct_methods();
+
+    set_types::array_print();
+    set_types::tuples_print();
+    set_types::vec_print();
+    set_types::hashmap_print();
+    set_types::slices_print();
 }
