@@ -3,6 +3,7 @@ mod chapter_one;
 use chapter_one::enums::enum_print;
 use chapter_one::set_types;
 use chapter_one::struct_methods::print_struct_methods;
+use chapter_one::word_counter::run_word_counter;
 
 fn silly_by(a: i32, b: i32) -> i32 {
     let mut result = 0;
@@ -78,4 +79,6 @@ fn main() {
     set_types::vec_print();
     set_types::hashmap_print();
     set_types::slices_print();
+
+    run_word_counter();
 }
