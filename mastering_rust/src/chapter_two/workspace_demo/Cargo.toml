@@ -1,0 +1,11 @@
+[package]
+name = "app"
+version = "0.1.0"
+authors = ["w"]
+edition = "2021"
+
+[workspace]
+members = ["my_crate", "app"]
+
+[dependencies]
+my_crate = { path = "../my_crate" }
