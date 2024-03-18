@@ -7,6 +7,7 @@
   "mastering_rust/chapter_five/Cargo.toml",
   "mastering_rust/chapter_six/Cargo.toml",
   "mastering_rust/chapter_seven/Cargo.toml",
-  "rust_by_examples/Cargo.toml"
+  "rust_by_examples/Cargo.toml",
+  "programming_rust/chapter_one/Cargo.toml"
  ]
 }
